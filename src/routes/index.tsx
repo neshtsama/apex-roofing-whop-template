@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { site } from '../site.config'
 import { track } from '../lib/track'
 import { EstimateForm } from '../components/EstimateForm'
+import { ThemeToggle } from '../components/ThemeToggle'
 
 export const Route = createFileRoute('/')({ component: Home })
 
@@ -29,7 +30,10 @@ function Home() {
             <a href="#reviews">Reviews</a>
             <a href="#contact">Contact</a>
           </nav>
-          <a href={`tel:${site.phone}`} className="text-sm font-semibold">{site.phone}</a>
+                    <div className="flex items-center gap-3">
+            <a href={`tel:${site.phone}`} className="text-sm font-semibold">{site.phone}</a>
+            <ThemeToggle />
+          </div>
         </div>
       </header>
 

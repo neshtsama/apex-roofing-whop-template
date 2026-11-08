@@ -15,3 +15,18 @@ body {
   margin: 0;
 }
 
+html { color-scheme: light; }
+html.dark { color-scheme: dark; }
+html.dark .bg-white { background-color: #0f172a; }
+html.dark .bg-white\/90 { background-color: rgb(15 23 42 / 0.9); }
+html.dark .bg-slate-50 { background-color: #111c33; }
+html.dark .text-slate-900 { color: #f1f5f9; }
+html.dark .text-slate-700,
+html.dark .text-slate-600 { color: #cbd5e1; }
+html.dark .text-slate-500 { color: #94a3b8; }
+html.dark .border-slate-100,
+html.dark .border-slate-200,
+html.dark .border-slate-300 { border-color: #334155; }
+html.dark .bg-green-50 { background-color: #052e1a; }
+html.dark .text-green-800 { color: #86efac; }
+
